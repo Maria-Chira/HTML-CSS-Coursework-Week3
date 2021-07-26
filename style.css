@@ -1,1 +1,347 @@
 /*  Add your styling here */
+
+
+/* --------------------------------------General styles--------------------------------- */
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size:12px;
+    text-align: justify;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+main{
+    margin: 0 2rem;
+}
+
+.welcome-section,
+.jumbotron,
+.cake-section{
+    margin-top: 3rem;
+}
+.nav-bar{
+    display: none;
+}
+/* -------------------------------Header style--------------------------- */
+#logo{
+    width: 8rem;
+}
+
+#hamburger-menu{
+    width: 4rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #B15962;
+    padding: 1rem;
+}
+
+.header-container{
+    margin-left: 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+/* ----------------------------------Welcome section styles------------------------------------ */
+.heading{
+    font-size: 2rem;
+    color: #B15962;
+    text-shadow: 2px 2px 2px #b1596291;
+    margin-top:0;
+}
+
+button{
+    background-color: #B15962;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #DCA869;
+}
+
+/* ------------------------------------------Jumbotron section styles--------------------------------- */
+.jumbotron{
+    background-image:linear-gradient(to right, rgba(58, 53, 53, 0.877), #b1596249), url("https://images.unsplash.com/photo-1613574471680-02c1f7c31056?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-size:cover;
+    background-position: center;
+    padding:1rem;
+}
+
+.jumbotron-text-container{
+    margin: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.jumbotron-heading{
+    font-size: 1.8rem;
+}
+
+.jumbotron-subheading{
+    font-size:1.5rem;
+}
+
+.jumbotron-paragraph{
+    background-color:#B15962;
+    width: max-content;
+    padding: 1rem;
+    border-radius: 100%;
+    color:white;
+    font-size: 1rem;
+    animation-name:jumbotron-tag;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jumbotron-tag {
+    0% {
+        background-color: #B15962;
+    }
+    50% {
+        background-color: #D89E5D;
+    }
+    100% {
+        background-color: #B15962;
+        color:white;
+    };
+  }
+
+
+  /* ---------------------------------------------Products section styles------------------------------ */
+
+#cupcakes-container{
+      background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #b1596249), url("https://images.unsplash.com/photo-1596223575327-99a5be4faf1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+}
+
+#donuts-container{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #b1596249), url("https://images.unsplash.com/photo-1612240498936-65f5101365d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+}
+
+#celebration-cake-container{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #b1596249), url("https://images.unsplash.com/photo-1565987164841-7132b384293b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+}
+
+#fruit-cakes-container{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #b1596249), url("https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+}
+
+.cake-container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 40%;
+    margin-bottom: 2rem;
+    height: 25rem;
+    transition: 0.2s linear;
+}
+
+.cakes-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.cake-container:hover{
+    transform: scale(1.02);
+}
+
+.heading-cake{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    justify-self: center;
+    text-shadow: 1px 1px 2px white;
+}
+
+
+/* --------------------------------Footer section styles------------------------------- */
+footer{
+    background-color: #B15962;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.icons-container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.footer-info{
+    font-size: 1.8rem;
+    border-bottom: 1px solid rgb(153, 79, 79);
+    padding-bottom: 1rem;
+    width: max-content;
+    margin-bottom: 0;
+}
+.icon{
+    width:30px;
+    margin: 0.8rem;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.icon-details{
+    width:2rem;
+    margin-right:0.5rem;
+}
+
+.details-container{
+    display: flex;
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------------------Media queries for min screen 540px------------------------------------- */
+
+@media only screen and (min-width: 540px) {
+
+    /* -------------------------------------General styles------------------------------------- */
+    body{
+        font-size: 14px;
+    }
+
+    /* ---------------------------------------Navigation bar styles------------------------------- */
+    .nav-bar{
+        display: block;
+        margin:0 2rem;
+        background-color: #B15962;
+    }
+
+    .nav-link-container{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        padding: 1.5rem;
+    }
+
+    .nav-link{
+        margin: 1rem;
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+    }
+
+    .nav-link:hover{
+        color: black;
+    }
+
+    /* --------------------------------------------Header section styles----------------------------- */
+    #hamburger-menu{
+        display: none;
+    }
+
+    .header-container{
+        justify-content: flex-end;
+    }
+
+    #main-heading{
+        color:white;
+    }
+
+    /* --------------------------------------------------Jumbotron styles-------------------------  */
+    .jumbotron-heading{
+        font-size: 2.8rem;
+    }
+    
+    .jumbotron-subheading{
+        font-size:2.5rem;
+    }
+    
+    /* ---------------------------------------------Products section styles--------------------------- */
+    .cake-container{
+       height:30rem;
+    }
+
+    /* -------------------------------------------------Footer section styles------------------------ */
+    .footer-info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------------------Media queries for min screen 540px------------------------------------- */
+@media only screen and (min-width: 900px) {
+    /* -------------------------------------General styles------------------------------------- */
+    body{
+        font-size: 16px;
+    }
+    main{
+        margin: 0 5rem;
+    }
+    /* ---------------------------------------Navigation bar styles------------------------------- */
+    .nav-bar{
+        margin: 0 5rem;
+    }
+    /* --------------------------------------Header+Jumbotron sections styles----------------------------- */
+    .welcome-jumbo-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .welcome-section{
+        width:48%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jumbotron{
+        width:48%;
+    }
+
+    /* ---------------------------------------------Products section styles--------------------------- */
+    .cake-container{
+        width: 20%;
+    }
+
+    .heading{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .cake-section{
+        margin: 5rem 0;
+    }
+
+    .cakes-container{
+        margin-top: 4rem;
+    }
+
+    .cake-container:hover{
+        transform: scale(1.1);
+    }
+
+    /* -------------------------------------------------Footer section styles------------------------ */
+    #footer-contact{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer p{
+        margin: 1rem;
+    }
+}
